@@ -80,10 +80,6 @@ public class HomeArticleAdapter extends RecyclerView.Adapter<RecyclerView.ViewHo
                 break;
             case TYPE_POSTS:
                 postsViewHolder = (PostsViewHolder) holder;
-//                View view = inflater.inflate(R.layout.home_item_posts,null);
-//                SimpleDraweeView draweeView = (SimpleDraweeView) view.findViewById(R.id.home_posts_SimpleDraweeView_user_photo);
-//                draweeView.setImageURI(dataBeen.get(position).getAvtUrl());
-//                Log.d("HomeArticleAdapter", "postsViewHolder.homePostsSimpleDraweeViewUserPhoto:" + postsViewHolder.homePostsSimpleDraweeViewUserPhoto);
                 postsViewHolder.homePostsSimpleDraweeViewUserPhoto.setImageURI(dataBeen.get(position).getAvtUrl());
                 postsViewHolder.homePostsTextviewUserName.setText(dataBeen.get(position).getAuthor());
                 postsViewHolder.homePostsTextviewPublishedtime.setText(dataBeen.get(position).getDateline());

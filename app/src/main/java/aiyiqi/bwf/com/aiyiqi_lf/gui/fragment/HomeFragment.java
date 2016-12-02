@@ -175,7 +175,14 @@ public class HomeFragment extends BaseFragment implements HomeViewPagerView, Hom
 
     }
 
-    @OnClick({R.id.linearlayout_feature_package_new, R.id.linearlayout_feature_activity, R.id.linearlayout_feature_school, R.id.linearlayout_feature_my_budget, R.id.linearlayout_feature_category, R.id.linearlayout_feature_renderings_new, R.id.linearlayout_feature_self_order, R.id.linearlayout_feature_design_measure})
+    @OnClick({R.id.linearlayout_feature_package_new,
+            R.id.linearlayout_feature_activity,
+            R.id.linearlayout_feature_school,
+            R.id.linearlayout_feature_my_budget,
+            R.id.linearlayout_feature_category,
+            R.id.linearlayout_feature_renderings_new,
+            R.id.linearlayout_feature_self_order,
+            R.id.linearlayout_feature_design_measure})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.linearlayout_feature_package_new:

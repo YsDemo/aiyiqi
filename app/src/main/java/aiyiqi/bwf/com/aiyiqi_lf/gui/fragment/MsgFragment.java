@@ -1,5 +1,7 @@
 package aiyiqi.bwf.com.aiyiqi_lf.gui.fragment;
 
+import aiyiqi.bwf.com.aiyiqi_lf.R;
+
 /**
  * Created by Administrator on 2016/12/1.
  */
@@ -7,6 +9,6 @@ package aiyiqi.bwf.com.aiyiqi_lf.gui.fragment;
 public class MsgFragment extends BaseFragment{
     @Override
     protected int getContextViewResId() {
-        return 0;
+        return R.layout.msg_fragment;
     }
 }

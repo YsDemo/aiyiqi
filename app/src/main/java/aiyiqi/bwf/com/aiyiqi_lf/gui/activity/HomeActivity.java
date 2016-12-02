@@ -80,6 +80,8 @@ public class HomeActivity extends BaseActivity {
             public void onTabChanged(String tabName) {
 
                 for (int i = 0; i < imageArrsDefault.length; i++) {
+                    transaction.add(R.id.main_frame,fragments.get(i));
+
                     View view = tabWidget.getChildTabViewAt(i);
                     TextView textView = (TextView) view.findViewById(R.id.home_tabhost_textview);
                     ImageView imageView = (ImageView) view.findViewById(R.id.home_tabhost_image);
@@ -92,9 +94,7 @@ public class HomeActivity extends BaseActivity {
                         imageView.setImageResource(imageArrsDefault[i]);
                         transaction.hide(fragments.get(i));
                     }
-
                 }
-
             }
         });
         transaction.commit();
@@ -114,6 +114,7 @@ public class HomeActivity extends BaseActivity {
         }else{
             imageView.setImageResource(imageArrsDefault[index]);
             textView.setText(tabNameArrays[index]);
+            textView.setTextColor(Color.BLACK);
         }
         return view;
     }
