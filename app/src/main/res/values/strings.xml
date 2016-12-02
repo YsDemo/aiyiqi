@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Main</string>
+    <string name="feature">装修公司</string>
+    <string name="avtivity">同城活动</string>
+    <string name="school">装修学堂</string>
+    <string name="budget">装修预算</string>
+    <string name="category">建材家具</string>
+    <string name="renderings">效果图</string>
+    <string name="self_order">自助下单</string>
+    <string name="design_measure">设计量房</string>
+
+</resources>
